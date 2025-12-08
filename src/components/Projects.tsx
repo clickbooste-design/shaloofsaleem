@@ -10,6 +10,7 @@ const projects = [
     tags: ["WordPress", "Shopify", "SEO"],
     icon: ShoppingCart,
     color: "from-cyan-400 to-blue-500",
+    link: "https://realtouchfurniture.ae",
   },
   {
     title: "Marketing Automation Dashboard",
@@ -17,13 +18,15 @@ const projects = [
     tags: ["Python", "Django", "Analytics"],
     icon: BarChart3,
     color: "from-emerald-400 to-cyan-500",
+    link: "#",
   },
   {
     title: "NESA Boutique E-Commerce",
     description: "Fashion e-commerce store with custom design, payment integration, and inventory management.",
     tags: ["WooCommerce", "Design", "UI/UX"],
     icon: Palette,
-  color: "from-pink-400 to-rose-500",
+    color: "from-pink-400 to-rose-500",
+    link: "https://nesaboutique.ae",
   },
   {
     title: "SEO Campaign - Local Business",
@@ -31,6 +34,7 @@ const projects = [
     tags: ["SEO", "Google Ads", "Analytics"],
     icon: Globe,
     color: "from-orange-400 to-amber-500",
+    link: "#",
   },
   {
     title: "Product Catalog System",
@@ -38,6 +42,7 @@ const projects = [
     tags: ["React", "Design", "PDF"],
     icon: FileText,
     color: "from-violet-400 to-purple-500",
+    link: "#",
   },
   {
     title: "Portfolio Website Design",
@@ -45,6 +50,7 @@ const projects = [
     tags: ["React", "Framer Motion", "Tailwind"],
     icon: Layout,
     color: "from-teal-400 to-cyan-500",
+    link: "#",
   },
 ];
 
@@ -85,7 +91,7 @@ const Projects = () => {
               className="group"
             >
               <div className="glass-card h-full p-4 sm:p-6 rounded-xl hover:border-primary/40 transition-all duration-500 hover:scale-[1.02] hover:-translate-y-1">
-                {/* Icon with gradient background */}
+                {/* Icon */}
                 <div className={`w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-gradient-to-br ${project.color} flex items-center justify-center mb-3 sm:mb-4 group-hover:scale-110 transition-transform duration-300`}>
                   <project.icon className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
                 </div>
@@ -110,9 +116,11 @@ const Projects = () => {
                   ))}
                 </div>
 
-                {/* View Project Link */}
+                {/* Dynamic Link Added */}
                 <a
-                  href="#"
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors duration-300"
                 >
                   View Project <ExternalLink size={14} />
