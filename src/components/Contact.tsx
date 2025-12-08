@@ -24,9 +24,9 @@ const Contact = () => {
   };
 
   const contactInfo = [
-    { icon: Mail, label: "Email", value: "hello@shaloofsaleem.com" },
+    { icon: Mail, label: "Email", value: "shaloofsaleem@gmail.com" },
     { icon: MapPin, label: "Location", value: "Dubai, UAE" },
-    { icon: Phone, label: "Phone", value: "+971 XX XXX XXXX" },
+    { icon: Phone, label: "Phone", value: "+971 54 439 7561" },
   ];
 
   return (
